@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Download</title>
+<style>
+#download{
+display:none;
+}
+</style>
+</head>
+<body class="boxed-layout">
+<div id="notice"></div>
+<div id="download">Download</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+      $(document).ready(function () {
+          var counter = 30;
+          var id = setInterval(function() {
+             counter--;
+             if(counter > 0) {
+                  var msg = 'Wait <br><span>' + counter + '</span> <br>seconds';
+                  $('#notice').html(msg);
+             } else {
+                  $('#notice').hide();
+                  $('#download').show();
+                  clearInterval(id);
+            }
+          }, 1000);
+      });
+
+    </script>
+</body>
+</html>

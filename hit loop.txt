@@ -1,0 +1,12 @@
+//note Jquery require.
+
+
+//for loop
+setInterval(function(){
+   //do something after every 5 seconds
+},5000);
+
+//for one time
+setTimeout(function(){
+//do something after 5 seconds
+},5000);
